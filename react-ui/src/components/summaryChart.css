@@ -1,0 +1,48 @@
+.stats-bar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .stats-bar .tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .tab button.active {
+    background: #6c5ce7;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .filter-icon {
+    font-size: 20px;
+  }
+  
+  .stats-details .stats-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .stats-details .stats-item .stats-percentage {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stats-details .stats-item .stats-percentage.active {
+    font-weight: bold;
+  }
+  
+  

@@ -1,0 +1,21 @@
+.time-details {
+    margin-top: 20px;
+  }
+  
+  .time-details > div {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    margin-top: 10px;
+  }
+  
+  .time-details .time-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .time-details .time-item p,
+  .time-details .time-item h3 {
+    margin: 5px 0; /* Adjust margin between items */
+  }
+  

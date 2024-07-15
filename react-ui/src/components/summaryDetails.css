@@ -1,0 +1,88 @@
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .summary-card .highlight {
+    background: #f0f0ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .time-details, .focus-details, .top-categories {
+    margin-top: 20px;
+  }
+  
+  .time-details > div, .focus-details .focus-item, .top-categories .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .focus-details .focus-item .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .circle.focus {
+    background-color: #6c5ce7;
+  }
+  
+  .circle.meetings {
+    background-color: #00b894;
+  }
+  
+  .circle.breaks {
+    background-color: #fd79a8;
+  }
+  
+  .circle.other {
+    background-color: #b2bec3;
+  }
+  
+  .top-categories .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-categories .category-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .top-categories .bar {
+    height: 6px;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .bar.design {
+    background-color: #6c5ce7;
+    width: 59%;
+  }
+  
+  .bar.video {
+    background-color: #00b894;
+    width: 12%;
+  }
+  
+  .bar.messaging {
+    background-color: #fd79a8;
+    width: 10%;
+  }
+  
+  .category-item .time, .category-item .percentage {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
