@@ -9,53 +9,66 @@ const SummaryDetails = () => {
     <div className="time-details">
       <div>
         <h3>Total time worked</h3>
-        <p>6 hr 18 min</p>
+        <h3>Percent of work day</h3>
       </div>
       <div>
-        <h3>Percent of work day</h3>
+        <p>6 hr 18 min</p>
         <p>79% of 8 hr 0 min</p>
       </div>
     </div>
     <div className="focus-details">
-      <div className="focus-item">
-        <div className="circle focus"></div>
-        <p>Focus</p>
-        <p>62%</p>
-      </div>
-      <div className="focus-item">
-        <div className="circle meetings"></div>
-        <p>Meetings</p>
-        <p>15%</p>
-      </div>
-      <div className="focus-item">
-        <div className="circle breaks"></div>
-        <p>Breaks</p>
-        <p>11%</p>
-      </div>
-      <div className="focus-item">
-        <div className="circle other"></div>
-        <p>Other</p>
-        <p>12%</p>
-      </div>
-    </div>
+            <div className="focus-item">
+                <div className="percentage" data-percent="62">
+                    <div className="inner-circle-cover">
+                        <span>62%</span>
+                    </div>
+                </div>
+                <div className="percentage" data-percent="15">
+                    <div className="inner-circle-cover">
+                        <span>15%</span>
+                    </div>
+                </div>
+                <div className="percentage" data-percent="11">
+                    <div className="inner-circle-cover">
+                        <span>11%</span>
+                    </div>
+                </div>
+                <div className="percentage" data-percent="12">
+                    <div className="inner-circle-cover">
+                        <span>12%</span>
+                    </div>
+                </div>
+            </div>
+            <div className="details">
+                <p>Focus</p>
+                <p>Meetings</p>
+                <p>Breaks</p>
+                <p>Other</p>
+            </div>
+        </div>
     <div className="top-categories">
       <h3>Top categories</h3>
       <div className="category-item">
-        <div className="bar design"></div>
+        <p>59% </p>
         <p>Design</p>
-        <p>59% (3 hr 44 min)</p>
+        <div className="bar design"></div>
+        <p>3 hr 44 min</p>
       </div>
       <div className="category-item">
-        <div className="bar video"></div>
+        <p>12% </p>
         <p>Video Conference</p>
-        <p>12% (45 min)</p>
+        <div className="bar video"></div>
+        <p>45 min</p>
       </div>
       <div className="category-item">
-        <div className="bar messaging"></div>
+        <p>10% </p>
         <p>Work Messaging</p>
-        <p>10% (37 min)</p>
+        <div className="bar messaging"></div>
+        <p>37 min</p>
       </div>
     </div>
+    
+    
   </div>
   );
 };

@@ -4,45 +4,123 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
-  }
-  
-  .stats-bar .tab {
+}
+
+.stats-bar .tab {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .tab button {
+}
+
+.tab button {
     background: none;
     border: none;
     padding: 10px;
     cursor: pointer;
-  }
-  
-  .tab button.active {
+}
+
+.tab button.active {
     background: #6c5ce7;
     color: white;
     border-radius: 4px;
-  }
-  
-  .filter-icon {
+}
+
+.filter-icon {
     font-size: 20px;
-  }
-  
-  .stats-details .stats-item {
+}
+
+.stats-details .stats-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
-  }
-  
-  .stats-details .stats-item .stats-percentage {
+}
+
+.stats-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stats-info .details {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.circular-charts {
+    display: flex;
+}
+
+.circle {
+    box-sizing: border-box;
+    position: relative;
+    width: 40px; /* Reduced size */
+    height: 40px; /* Reduced size */
+    border-radius: 50%;
     display: flex;
     align-items: center;
-  }
-  
-  .stats-details .stats-item .stats-percentage.active {
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.inner-circle-cover {
+    width: 30px; /* Reduced size */
+    height: 30px; /* Reduced size */
+    background: #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-circle-cover span {
+    font-size: 10px; /* Adjusted font size */
     font-weight: bold;
-  }
-  
-  
+    color: #333;
+}
+
+.circle[data-percent="62"] {
+    background: conic-gradient(#6c5ce7 0% 62%, #ccc 62% 100%);
+}
+
+.circle[data-percent="15"] {
+    background: conic-gradient(#00b894 0% 15%, #ccc 15% 100%);
+}
+
+.circle[data-percent="23"] {
+    background: conic-gradient(#fd79a8 0% 23%, #ccc 23% 100%);
+}
+
+.circle[data-percent="45"] {
+    background: conic-gradient(#6c5ce7 0% 45%, #ccc 45% 100%);
+}
+
+.circle[data-percent="35"] {
+    background: conic-gradient(#00b894 0% 35%, #ccc 35% 100%);
+}
+
+.circle[data-percent="24"] {
+    background: conic-gradient(#fd79a8 0% 24%, #ccc 24% 100%);
+}
+
+.circle[data-percent="33"] {
+    background: conic-gradient(#6c5ce7 0% 33%, #ccc 33% 100%);
+}
+
+.circle[data-percent="22"] {
+    background: conic-gradient(#00b894 0% 22%, #ccc 22% 100%);
+}
+
+.circle[data-percent="40"] {
+    background: conic-gradient(#fd79a8 0% 40%, #ccc 40% 100%);
+}
+
+.circle[data-percent="28"] {
+    background: conic-gradient(#6c5ce7 0% 28%, #ccc 28% 100%);
+}
+
+.circle[data-percent="32"] {
+    background: conic-gradient(#fd79a8 0% 32%, #ccc 32% 100%);
+}

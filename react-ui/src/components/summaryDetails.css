@@ -25,34 +25,89 @@
     margin-top: 10px;
   }
   
-  .focus-details .focus-item .circle {
-    width: 20px;
-    height: 20px;
+  .focus-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.focus-item {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+  .circle {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
     border-radius: 50%;
+    background-color: #ccc; /* Default background color */
+    margin-right: 10px; /* Adjust spacing between circles and percentages */
   }
   
   .circle.focus {
-    background-color: #6c5ce7;
+    background-color: #ff6347; /* Red color for focus circle */
   }
   
   .circle.meetings {
-    background-color: #00b894;
+    background-color: #4682b4; /* Blue color for meetings circle */
   }
-  
-  .circle.breaks {
-    background-color: #fd79a8;
-  }
-  
-  .circle.other {
-    background-color: #b2bec3;
-  }
-  
-  .top-categories .category-item {
+  .percentage {
+    box-sizing: border-box;
+    position: relative;
+    width: 60px; /* Diameter of the circle */
+    height: 60px; /* Diameter of the circle */
+    margin: 0 10px; /* Adjust spacing between percentages */
+    border-radius: 50%; /* Make it round */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-  
+    justify-content: center;
+}
+
+.percentage[data-percent="62"] {
+    background: conic-gradient(#6c5ce7 0% 62%, #ccc 62% 100%);
+}
+
+.percentage[data-percent="15"] {
+    background: conic-gradient(#00b894 0% 15%, #ccc 15% 100%);
+}
+
+.percentage[data-percent="11"] {
+    background: conic-gradient(#fd79a8 0% 11%, #ccc 11% 100%);
+}
+
+.percentage[data-percent="12"] {
+    background: conic-gradient(#b2bec3 0% 12%, #ccc 12% 100%);
+}
+
+.inner-circle-cover {
+    width: 45px; /* Slightly smaller than the .percentage circle */
+    height: 45px; /* Slightly smaller than the .percentage circle */
+    background: #eee; /* Inner circle background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.inner-circle-cover span {
+    font-size: 12px; /* Font size for percentage text */
+    font-weight: bold; /* Font weight for percentage text */
+    color: #333; /* Text color */
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.details p {
+    margin: 0 10px;
+}
   .top-categories .category-bar {
     display: flex;
     align-items: center;
@@ -84,5 +139,8 @@
   .category-item .time, .category-item .percentage {
     font-size: 0.875rem;
     color: #6c757d;
+  }
+  .bar {
+    transition: width 0.3s ease; /* Smooth transition effect */
   }
   
