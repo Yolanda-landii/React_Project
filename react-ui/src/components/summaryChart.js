@@ -1,14 +1,20 @@
 import React from 'react';
 import './summaryChart.css';
+import {useState} from 'react';
 
 const SummaryChart = () => {
+    const [activeTab, setActiveTab] = useState('Day');
+
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+    };
     return (
         <div className="stats-bar">
             <div className="tab">
-                <button className="active">Day</button>
-                <button>Week</button>
-                <button>Month</button>
-                <div className="filter-icon">🔍</div>
+                <button className={activeTab === 'Day' ? 'active' : ''} onClick={() => handleTabClick('Day')}>Day</button>
+                <button className={activeTab === 'Week' ? 'active' : ''} onClick={() => handleTabClick('Week')}>Week</button>
+                <button className={activeTab === 'Month' ? 'active' : ''} onClick={() => handleTabClick('Month')}>Month</button>
+                <div className="calendar-icon">📅</div>
             </div>
             <div className="stats-details">
                 <div className="stats-item">

@@ -53,6 +53,25 @@
   .circle.meetings {
     background-color: #4682b4; /* Blue color for meetings circle */
   }
+
+.pie-chart {
+    width: 45px; /* Size of the pie chart */
+    height: 45px; /* Size of the pie chart */
+    background-image: conic-gradient(#6c5ce7 0% 62%, #ccc 62% 100%);
+    border-radius: 50%; /* Make it round */
+    margin-left: 10px; /* Adjust spacing from the percentage */
+    position: relative;
+}
+
+.pie-chart:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%; /* Make it round */
+    background-color: white; /* Background color to cover center */
+    z-index: 1; /* Ensure it's above the gradient */
+}
   .percentage {
     box-sizing: border-box;
     position: relative;

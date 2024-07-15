@@ -1,6 +1,6 @@
 .stats-bar {
     background: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
@@ -46,7 +46,7 @@
 .stats-info .details {
     display: flex;
     justify-content: space-between;
-    width: 120px;
+    width: 170px;
 }
 
 .circular-charts {

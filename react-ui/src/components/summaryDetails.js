@@ -13,7 +13,7 @@ const SummaryDetails = () => {
       </div>
       <div>
         <p>6 hr 18 min</p>
-        <p>79% of 8 hr 0 min</p>
+        <p>79% of 8 hr 0 min <span className="pie-chart"></span></p>
       </div>
     </div>
     <div className="focus-details">
